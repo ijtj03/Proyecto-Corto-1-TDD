@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 04 21:51:53 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rgb<0>" LOCATE = SITE "T7" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "rgb<3>" LOCATE = SITE "T6" LEVEL 1;
+COMP "rgb<4>" LOCATE = SITE "P8" LEVEL 1;
+COMP "rgb<5>" LOCATE = SITE "N7" LEVEL 1;
+COMP "rgb<6>" LOCATE = SITE "V7" LEVEL 1;
+COMP "rgb<7>" LOCATE = SITE "U7" LEVEL 1;
+COMP "gen_clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T5" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "U8" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "reset" LOCATE = SITE "T10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "vgaClk/divcounter_1" BEL "vgaClk/divcounter_0" BEL
+        "div/divcounter_24" BEL "div/divcounter_23" BEL "div/divcounter_22"
+        BEL "div/divcounter_21" BEL "div/divcounter_20" BEL
+        "div/divcounter_19" BEL "div/divcounter_18" BEL "div/divcounter_17"
+        BEL "div/divcounter_16" BEL "div/divcounter_15" BEL
+        "div/divcounter_14" BEL "div/divcounter_13" BEL "div/divcounter_12"
+        BEL "div/divcounter_11" BEL "div/divcounter_10" BEL "div/divcounter_9"
+        BEL "div/divcounter_8" BEL "div/divcounter_7" BEL "div/divcounter_6"
+        BEL "div/divcounter_5" BEL "div/divcounter_4" BEL "div/divcounter_3"
+        BEL "div/divcounter_2" BEL "gen_clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 25 MHz HIGH 50%;
+SCHEMATIC END;
+

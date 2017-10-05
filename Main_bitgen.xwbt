@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ijtj0\P2\Main.ncd
+OUTFILE=C:\Users\ijtj0\P2\Main.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\ijtj0\P2
+LICENSE=WebPack
+USER_INFO=211386791_0_0_578
